@@ -23,4 +23,30 @@
   gap: 20px;
   flex: 1;
   font-size: 20px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .navbar__logo {
+    font-size: 32px;
+  }
+  .navbar__links {
+    font-size: 18px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar__social {
+    display: none;
+  }
+  .navbar__logo {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__logo {
+    font-size: 24px;
+  }
 }
