@@ -50,3 +50,12 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .navbar__links {
+    justify-content: flex-end;
+  }
+  .navbar__link {
+    display: none;
+  }
+}

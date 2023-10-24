@@ -15,12 +15,20 @@ const Navbar = () => {
         {/* <Image src='/tiktok.png' alt='tiktok' width={24} height={24} /> */}
         <Image src='/youtube.png' alt='youtube' width={24} height={24} />
       </div>
-      <div className={styles.navbar__logo}>Daily Blog</div>
+      <Link href='/' className={styles.navbar__logo}>
+        Daily Blog
+      </Link>
       <div className={styles.navbar__links}>
         <ThemeToggle />
-        <Link href='/'>Homepage</Link>
-        <Link href='/contact'>Contact</Link>
-        <Link href='/'>About</Link>
+        <Link href='/' className={styles.navbar__link}>
+          Homepage
+        </Link>
+        <Link href='/contact' className={styles.navbar__link}>
+          Contact
+        </Link>
+        <Link href='/' className={styles.navbar__link}>
+          About
+        </Link>
         <AuthLink />
       </div>
     </div>
