@@ -1,6 +1,6 @@
 import styles from './pagination.module.css';
 
 const Pagination = () => {
-  return <div>Pagination</div>;
+  return <div className={styles.pagination}>Pagination</div>;
 };
 export default Pagination;

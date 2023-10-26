@@ -1,6 +1,3 @@
-.categories {
-}
-
 .categories__title {
   margin: 50px 0px;
 }
@@ -44,4 +41,28 @@
 
 .image {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  .content__category {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content__category {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content__category {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .content__category {
+    width: 100%;
+  }
 }
