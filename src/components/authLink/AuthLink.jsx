@@ -5,7 +5,7 @@ import styles from './authlink.module.css';
 import { useState } from 'react';
 
 const AuthLink = () => {
-  const status = 'unauthenticated';
+  const status = 'authenticated';
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -16,7 +16,7 @@ const AuthLink = () => {
       ) : (
         <div className={styles.auth}>
           <Link href='/write' className={styles.auth__link}>
-            Wrtie
+            Write
           </Link>
           <span className={styles.auth__link}>Logout</span>
         </div>
@@ -39,8 +39,8 @@ const AuthLink = () => {
           {status === 'unauthenticated' ? (
             <Link href='/login'>Login</Link>
           ) : (
-            <div className={styles.auth}>
-              <Link href='/write'>Wrtie</Link>
+            <div className={styles.auth__menu}>
+              <Link href='/write'>Write</Link>
               <span className={styles.auth__link}>Logout</span>
             </div>
           )}
